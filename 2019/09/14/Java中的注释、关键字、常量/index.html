@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    
+    
+    <title>Java中的注释、关键字、常量 | 不理朝夕_</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content>
+    <link rel="shortcut icon" href="/img/duck.ico">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.4">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/beijing.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/feng.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Yuri</h5>
+          <a href="mailto:123820373@qq.com" title="123820373@qq.com" class="mail">
+            
+              <span>1</span>
+            
+              <span>2</span>
+            
+              <span>3</span>
+            
+              <span>8</span>
+            
+              <span>2</span>
+            
+              <span>0</span>
+            
+              <span>3</span>
+            
+              <span>7</span>
+            
+              <span>3</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/codefine" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                CATEGORIES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                TAGS
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-plus-square"></i>
+                CUSTOM
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>Java中的注释、关键字、常量</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="/img/timg111.jpg" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">Java中的注释、关键字、常量</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-09-14T09:03:41.827Z" itemprop="datePublished" class="page-time">
+  2019-09-14
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-Java中的注释、关键字、常量"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">Java中的注释、关键字、常量</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-09-14 17:03:41" datetime="2019-09-14T09:03:41.827Z"  itemprop="datePublished">2019-09-14</time>
+
+            
+
+
+            
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h1 id="Day01—-2"><a href="#Day01—-2" class="headerlink" title="Day01—-2"></a>Day01—-2</h1><h2 id="1-注释"><a href="#1-注释" class="headerlink" title="1 注释"></a>1 注释</h2><p>注释是在程序指定位置添加的说明性信息<br>作用：提高代码的可读性。</p>
+<ul>
+<li><p>单行注释，可以嵌套使用<br>格式： </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注释内容</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多行注释，多行注释不能嵌套使用     格式： </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*注释</span></span><br><span class="line"><span class="comment">内容*/</span></span><br><span class="line">```  </span><br><span class="line">- 文档注释（多行）     格式：</span><br><span class="line">```java</span><br><span class="line"><span class="comment">/** </span></span><br><span class="line"><span class="comment">注</span></span><br><span class="line"><span class="comment">释</span></span><br><span class="line"><span class="comment">内</span></span><br><span class="line"><span class="comment">容</span></span><br><span class="line"><span class="comment">看到了吗！*/</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>软件 = 指令 + 数据 + 文档(使用者文档和开发者文档)<br>文档注释的用途？<br>可以使用java开发工具javadoc生成说明文档</p>
+<ul>
+<li>用法：javadoc [-author][-version] -d 输出目录 源代码文件.java</li>
+<li>注意：author(作者)字段和version(版本)字段只能写在类上。</li>
+</ul>
+<h2 id="2-关键字"><a href="#2-关键字" class="headerlink" title="2 关键字"></a>2 关键字</h2><h3 id="2-1-关键字概述"><a href="#2-1-关键字概述" class="headerlink" title="2.1 关键字概述"></a>2.1 关键字概述</h3><p>关键字就是被java语言赋予了特定含义的单词。</p>
+<h3 id="2-2-关键字的特点"><a href="#2-2-关键字的特点" class="headerlink" title="2.2 关键字的特点"></a>2.2 关键字的特点</h3><ul>
+<li>关键字的字母都是小写。</li>
+<li>常用的代码编辑器，针对关键字有特殊的颜色标记，非常直观。</li>
+</ul>
+<h2 id="3-常量"><a href="#3-常量" class="headerlink" title="3 常量"></a>3 常量</h2><h3 id="3-1-常量描述"><a href="#3-1-常量描述" class="headerlink" title="3.1 常量描述"></a>3.1 常量描述</h3><p>在程序运行过程中，值不能改变的量。</p>
+<h3 id="3-2-常量分类"><a href="#3-2-常量分类" class="headerlink" title="3.2 常量分类"></a>3.2 常量分类</h3><ul>
+<li>字符串常量：用双引号括起来的内容。“Hello World”</li>
+<li>整数常量：不带小数的数字。12，36</li>
+<li>小数常量：带小数的数字。12.4</li>
+<li>字符常量：用单引号括起来的内容。‘A’，’4’</li>
+<li>布尔常量：布尔值，表示真假。true、false</li>
+<li>空常量：一个特殊的值，空值。null</li>
+</ul>
+
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-09-14T10:36:55.626Z" itemprop="dateUpdated">2019-09-14 18:36:55</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2019/09/14/Java中的注释、关键字、常量/" target="_blank" rel="external">http://yoursite.com/2019/09/14/Java中的注释、关键字、常量/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/feng.jpg" alt="Yuri">
+            Yuri
+        </a>
+    </footer>
+</blockquote>
+
+        
+        
+        <div class="post-footer">
+            
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/14/Java中的注释、关键字、常量/&title=《Java中的注释、关键字、常量》 — 不理朝夕_&pic=http://yoursite.com/img/feng.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/14/Java中的注释、关键字、常量/&title=《Java中的注释、关键字、常量》 — 不理朝夕_&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2019/09/14/数据类型、标识符、变量/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">数据类型、标识符、变量</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="next">
+      <a href="/2019/09/14/JDK的环境配置与Java初体验/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">JDK的环境配置与Java初体验</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Day01—-2"><span class="post-toc-text">Day01—-2</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-注释"><span class="post-toc-text">1 注释</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-关键字"><span class="post-toc-text">2 关键字</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-关键字概述"><span class="post-toc-text">2.1 关键字概述</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-关键字的特点"><span class="post-toc-text">2.2 关键字的特点</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-常量"><span class="post-toc-text">3 常量</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-常量描述"><span class="post-toc-text">3.1 常量描述</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2-常量分类"><span class="post-toc-text">3.2 常量分类</span></a></li></ol></li></ol></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+
+</div>
+
+    </main>
+    <footer class="footer ">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.lujingtao.com" target="_blank">HOME</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Yuri &copy; 2019
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/14/Java中的注释、关键字、常量/&title=《Java中的注释、关键字、常量》 — 不理朝夕_&pic=http://yoursite.com/img/feng.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/14/Java中的注释、关键字、常量/&title=《Java中的注释、关键字、常量》 — 不理朝夕_&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACwElEQVR42u3aQXKDMBAEwPz/00lVrjF4Ris5HJqTywGZ5sBuZvX1FR/fv8fVN1ef71e7OvPqr8nKiwceHh7e0q1fHfdL/z2nven7O0l+6/4qPDw8vHO85NbXXuL36yRnrj1uPDw8vCfwrn4mv8UE2T4IPDw8vCfz2pY6LydJScDDw8N7Gi8JI/KbyKPYpGDc38+2rAUPDw8v5rUDsCd8Pjjfw8PDwxtM1SelYh71tsXgxVV4eHh4B3j5UD/6t38+rAoKQL4+Hh4e3md4SQHYFRa0rXOy/osV8PDw8Lby8tg0D2GTFZIGOhmwvVkBDw8P7wBvPspqx1fJsKotAG/+JcDDw8PbyssDiDYCyF/obVEpvsHDw8P7J17++l4LYdc2MUSNNR4eHt4xXtva5gHuWuOePILozvHw8PAO8JLXetvm5gUgDzuSKOTyfvDw8PC28tpB1Nr2gnaL1bbYAg8PD+8wr41rd2GS311stfHw8PAO8CZBat6Ot/HBffmZ4PHw8PDmvCRCzaOKxTFV3Fi3jxsPDw/vBK89KWmId0W3dRp9X37w8PDwNvHWXtBt67y2LaAd0eHh4eF9hjdZNGnK2w0Bu5ppPDw8vNO8dtPV3tFXPspqN8Li4eHhneBNdrnu2sY6b5frNhoPDw9vwMujhL3bCNbCjqRURHUPDw8Pb8xrR/vtZoJ6FjcIcIs+HQ8PD2/Ay4f9+SNoW+RkYLbWxOPh4eF9hpeHuUmjfP85D4jbkRgeHh7eCd53eeQRwGSoNv/+xZ4yPDw8vE28ST1Za4gnL/rNuQseHh7egJcXg7Uotr0q2SJQFAY8PDy8Y7zJ8GmteCRnjlIWPDw8vIfx8q0DeQyxq6HHw8PDew4vD3bb93MSBLcbwvDw8PBO83YNpXL8rsf05io8PDy8A7zJACyJEvKR2PxBLCLx8PDwUt4PxMNek9RM5HoAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.4.4"></script>
+<script type="text/javascript" src="/js/plugins/ios-orientationchange-fix.js?v=1.4.4"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.4.4"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.4.4"></script>
+
+<!-- third-party -->
+
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.4.4"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
